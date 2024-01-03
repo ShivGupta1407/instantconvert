@@ -52,10 +52,11 @@ public function store(Request $request)
         $courses = courses::all();
         return view('admin.university.edit', compact('university', 'courses'));
     }
-    public function update(Request $request, University $university)
+    public function update($id,Request $request, University $university)
     {
     
         // Update the university name
+        $university = University::find($id);
         $university->name = $request->input('name');
 
         // Update the courses associated with the university
