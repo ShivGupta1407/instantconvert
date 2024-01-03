@@ -18,13 +18,13 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #9fd7a7;
+            background-color: #a2dcee;
         }
 
         /* Sidebar */
         .sidebar {
             width: 250px;
-            background-color: #76d265;
+            background-color: #133E58;
             color: #fff;
             height: 100vh;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -42,7 +42,7 @@
             padding-top: 35px;
             font-size: 20px;
             font-weight: bold;
-            background-color: #126213;
+            background-color: #4c70a5;
             width: 100%;
             height: 90px;
             text-align: center;
@@ -58,6 +58,11 @@
         .sidebar-menu li {
             padding: 10px 0;
             padding-left:10px; 
+            margin-bottom: 10px;
+            margin-left:10px;
+            margin-right:10px;
+            border-radius: 10px;
+            background-color: #c0d8ff;
         }
 
         .sidebar-menu li a {
@@ -72,7 +77,7 @@
 
         .special{
             background-color: #f1f1f1;
-            color: #126213;
+            color: #123262;
             font-size: 17px;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
         }
@@ -89,7 +94,7 @@
 
         /* Navbar */
         .navbar {
-            background-color: #126213;
+            background-color: #133E58;
             color: #fff;
             display: flex;
             align-items: center;
@@ -101,6 +106,7 @@
 
         .navbar-heading {
             font-size: 26px;
+            font-weight: 500;
             text-align: center;
             font-family: 'Nunito Sans', sans-serif;
 
@@ -133,9 +139,11 @@
             right: 10%;
             z-index: -1;
             mix-blend-mode: color-burn;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
             top: 40%;
             opacity: 40%;
-            box-shadow: #09440c;
+            box-shadow: #092344;
             transform: rotate(-30deg);
         }
     </style>
